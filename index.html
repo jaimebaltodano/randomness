@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Countdown</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
+        <script language="javascript" type="text/javascript" src="js/random.js"></script>
+	</head>
+	<body>
+		<div id="page">
+			<header>
+				<div class="hero">
+                    <h1>Randomness</h1>
+                    <input type="number" name="initnumber" id="initnumber"></input>
+                    <a class="btn" id= "btn" title="Random" href="#" >Random</a>
+                    
+				</div>
+			</header>
+			<section class="time">
+				<aside>
+                    <div class="content">
+                        <p class="digits randomval"></p>
+                    </div>
+                </aside>
+			</section>
+		</div>
+    </body>
+    <script language="javascript">
+        document.getElementById('initnumber').addEventListener('keypress', OnlyNumbers,false);
+        document.getElementById('btn').addEventListener('click', randomNumber,false);
+    </script>
+</html>
